@@ -23,3 +23,5 @@ runs/*
 !runs/coverage_20260815_060059/
 !runs/coverage_20260815_060620/
 !runs/all_free_20260815_062527/
+
+coverage_probe copy.py
