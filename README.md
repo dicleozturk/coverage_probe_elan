@@ -1,6 +1,6 @@
 # Coverage probe
 
-Do language models produce anything usable in endangered languages of Turkey — and if so, in the right language and the right script?
+Do language models produce anything usable in an endangered language, and if so, in the right language and the right script?
 
 This script asks a set of models to write short texts in Kirmanckî (Zazaki), Adyghe, Kabardian and Homshetsma, with Kurmanji as a better-resourced control. It records every call in full and attaches a few quick flags to make the output easy to read through.
 
