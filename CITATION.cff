@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Coverage probe: testing language model output in endangered languages of Turkey"
+authors:
+  - family-names: "Öztürk"
+    given-names: "Dicle"
+    affiliation: "Lucitext"
+version: "1.0.0"
+date-released: "2026-09-22"
+license: GPL-3.0-or-later
+keywords:
+  - endangered languages
+  - low-resource languages
+  - language models
+  - Zazaki
+  - Kirmanckî
+  - Circassian
+  - Homshetsma

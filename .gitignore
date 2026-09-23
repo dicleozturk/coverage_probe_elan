@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secrets — never commit the API key
+.env
+.env.*
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local trial runs: keep the published ones, ignore new ones by default.
+# To publish a run, first redact account identifiers from its error messages
+# (see runs/README.md), then force-add it:  git add -f runs/<run-name>
+runs/*
+!runs/README.md
+!runs/coverage_20260815_060059/
+!runs/coverage_20260815_060620/
+!runs/all_free_20260815_062527/
