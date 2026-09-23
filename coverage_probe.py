@@ -42,7 +42,7 @@ PRESETS = {
         "models": [
             "anthropic/claude-sonnet-5",       # frontier closed A
             "openai/gpt-5.6",                  # frontier closed B, different provider
-            "qwen/qwen3.8-27b",       # open multilingual
+            "qwen/qwen3.5-72b-instruct",       # open multilingual
         ],
         "base_url": "https://openrouter.ai/api/v1",
         "api_key_env": "OPENROUTER_API_KEY",
@@ -118,7 +118,7 @@ LANGUAGES = {
     },
     "homshetsma": {
         "label": "Homshetsma (Hemshin)",
-        "prompt_name": "Homshetsma (the Armenic variety spoken by the Hemshin)",
+        "prompt_name": "Homshetsma (Hemshince), spoken by the Hemshin",
         "expect_script": "unknown",
     },
     # Control: comparatively better resourced. If a model fails here too,

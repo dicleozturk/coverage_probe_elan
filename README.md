@@ -57,8 +57,7 @@ Each run writes to `runs/<languages>_<preset>_<time>/`:
 | Flag | Meaning |
 |---|---|
 | `NOT_RUN(rate_limited)` | The provider refused the call. Says nothing about the language. |
-| `NOT_RUN(model_unavailable)` | The model has been removed, or the id in the preset is no longer valid. Says nothing about the language. |
-| `NOT_RUN(no_credits)` | The account has no credit. Says nothing about the model or the language. |
+| `NOT_RUN(model_unavailable)` | The model has been removed. Says nothing about the language. |
 | `NOT_RUN(error)` | Some other failure before the model answered. |
 | `EMPTY` | The model was reached and returned nothing. |
 | `SCRIPT_MISMATCH(expected …)` | Under half the letters are in the expected script. |
@@ -76,7 +75,9 @@ The distinction between `NOT_RUN` and `EMPTY` matters. On free tiers most calls 
 
 **Two samples per item.** One sample may be luck. The difference between two shows whether the output is stable or noise.
 
-**The prompt shapes the output.** Homshetsma is introduced to the model as "the Armenic variety spoken by the Hemshin". Homshetsma speakers in Turkey do not write in Armenian script, but a model given that description may reach for it. Read script choices with the prompt in mind.
+**The prompt shapes the output.** Each language is named to the model in the prompt, and how it is named can steer what comes back — including the script. Languages are named as their speakers name them, without classification, and the prompts are recorded in full with every run so that any such effect can be traced.
+
+The runs from August 2026 in `runs/` were made with an earlier prompt that named Homshetsma by a linguistic classification. Script choices in those outputs should be read with that in mind.
 
 ## The runs in this repository
 
